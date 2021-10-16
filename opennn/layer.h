@@ -59,7 +59,7 @@ public:
     /// This enumeration represents the possible types of layers.
 
     enum class Type{Scaling, Convolutional, Perceptron, Pooling, Probabilistic,
-              LongShortTermMemory,Recurrent, Unscaling, Bounding};
+              LongShortTermMemory,Recurrent, Unscaling, Bounding, PrincipalComponents};
 
     // Constructor
 

@@ -26,6 +26,7 @@
 #include "layer.h"
 #include "perceptron_layer.h"
 #include "scaling_layer.h"
+#include "principal_components_layer.h"
 #include "unscaling_layer.h"
 #include "bounding_layer.h"
 #include "probabilistic_layer.h"
@@ -80,6 +81,7 @@ public:
    // Get methods
 
    bool has_scaling_layer() const;
+   bool has_principal_components_layer() const;
    bool has_long_short_term_memory_layer() const;
    bool has_recurrent_layer() const;
    bool has_unscaling_layer() const;
@@ -105,6 +107,7 @@ public:
    UnscalingLayer* get_unscaling_layer_pointer() const;
    BoundingLayer* get_bounding_layer_pointer() const;
    ProbabilisticLayer* get_probabilistic_layer_pointer() const;
+   PrincipalComponentsLayer* get_principal_components_layer_pointer() const;
    LongShortTermMemoryLayer* get_long_short_term_memory_layer_pointer() const;
    RecurrentLayer* get_recurrent_layer_pointer() const;
 

@@ -43,6 +43,9 @@ string Layer::get_type_string() const
     case Type::Pooling:
         return "Pooling";
 
+    case Type::PrincipalComponents:
+        return "PrincipalComponents";
+
     case Type::Probabilistic:
         return "Probabilistic";
 
